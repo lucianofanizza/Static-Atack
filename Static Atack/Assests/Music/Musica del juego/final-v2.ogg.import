@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/final-v2.ogg-2bfec2498853fb5b84d2127e0f59ed56.oggstr"
+
+[deps]
+
+source_file="res://Assests/Music/Musica del juego/final-v2.ogg"
+dest_files=[ "res://.import/final-v2.ogg-2bfec2498853fb5b84d2127e0f59ed56.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/boss-cancion-final.ogg-027efc8a5c91f2b8561d8899bbba724e.oggstr"
+
+[deps]
+
+source_file="res://Assests/Music/Musica del juego/boss-cancion-final.ogg"
+dest_files=[ "res://.import/boss-cancion-final.ogg-027efc8a5c91f2b8561d8899bbba724e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

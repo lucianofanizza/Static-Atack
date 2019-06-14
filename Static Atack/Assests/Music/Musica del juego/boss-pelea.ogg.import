@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/boss-pelea.ogg-51dff65677de2926c3e28e1e6e53cc90.oggstr"
+
+[deps]
+
+source_file="res://Assests/Music/Musica del juego/boss-pelea.ogg"
+dest_files=[ "res://.import/boss-pelea.ogg-51dff65677de2926c3e28e1e6e53cc90.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

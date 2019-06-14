@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/botones menu y pausa.wav-ac8ee3c52e0a017596c55bf97ff02ad3.sample"
+
+[deps]
+
+source_file="res://Assests/Music/Efectos de sonido/botones menu y pausa.wav"
+dest_files=[ "res://.import/botones menu y pausa.wav-ac8ee3c52e0a017596c55bf97ff02ad3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

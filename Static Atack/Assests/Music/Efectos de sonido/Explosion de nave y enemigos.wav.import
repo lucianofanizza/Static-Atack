@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Explosion de nave y enemigos.wav-feb2b9ffe5937e87b76e42e785ad54de.sample"
+
+[deps]
+
+source_file="res://Assests/Music/Efectos de sonido/Explosion de nave y enemigos.wav"
+dest_files=[ "res://.import/Explosion de nave y enemigos.wav-feb2b9ffe5937e87b76e42e785ad54de.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

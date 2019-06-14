@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/explosion del boss.wav-3c8921f1d7150ca57a92ddc8e0377384.sample"
+
+[deps]
+
+source_file="res://Assests/Music/Efectos de sonido/explosion del boss.wav"
+dest_files=[ "res://.import/explosion del boss.wav-3c8921f1d7150ca57a92ddc8e0377384.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

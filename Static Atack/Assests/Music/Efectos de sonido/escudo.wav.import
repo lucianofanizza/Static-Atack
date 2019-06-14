@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/escudo.wav-f8682ab97cc3fda794f455211194ba90.sample"
+
+[deps]
+
+source_file="res://Assests/Music/Efectos de sonido/escudo.wav"
+dest_files=[ "res://.import/escudo.wav-f8682ab97cc3fda794f455211194ba90.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

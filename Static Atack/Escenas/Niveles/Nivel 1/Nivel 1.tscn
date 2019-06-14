@@ -1,0 +1,190 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scrips/Nivel 1.gd" type="Script" id=1]
+[ext_resource path="res://Assests/Imagenes/Fondo del nivel/espacio.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/Imagenes/Disparos y escudo/tiro cuadruple.png" type="Texture" id=3]
+[ext_resource path="res://Escenas/Personajes/Nave.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escenas/Personajes/Enemigo.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Enemigos"
+length = 120.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Orden_enemigos/Enemigo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1142.71, 414.601 ), Vector2( -459.806, 258.158 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Orden_enemigos/Enemigo2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1142.92, 81.6905 ), Vector2( 1142.92, 81.6905 ), Vector2( -338.528, 816.292 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Orden_enemigos/Enemigo3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 8, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1168.17, 646.125 ), Vector2( 1168.17, 646.125 ), Vector2( -438.429, 670.612 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Orden_enemigos/Enemigo4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 12, 14.5, 16.5, 19, 21.6, 24 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -213.001, 662.597 ), Vector2( -213.001, 662.597 ), Vector2( 108.047, 329.305 ), Vector2( 356.351, 641.708 ), Vector2( 786.08, 439.517 ), Vector2( 772.604, 220.798 ), Vector2( 1182.52, 415.224 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Orden_enemigos/Enemigo5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -193.853, 453.617 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Orden_enemigos/Enemigo6:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -187.391, 195.146 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Orden_enemigos/Enemigo7:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 4, 5.5, 7, 8.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 231.741, 790.399 ), Vector2( 231.741, 790.399 ), Vector2( 665.989, 127.336 ), Vector2( 772.202, 501.793 ), Vector2( -153.573, -139.067 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Orden_enemigos/Enemigo8:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 15.2, 17, 20.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 625.904, 792.069 ), Vector2( 640.936, 93.9329 ), Vector2( 54.2567, 781.008 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Orden_enemigos/Enemigo9:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 9, 10.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 356.76, -104.263 ), Vector2( 738.265, 832.797 ) ]
+}
+
+[node name="Nivel 1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Fondo de nivel" type="Sprite" parent="."]
+position = Vector2( 513.711, 360.567 )
+scale = Vector2( 1.12342, 0.872321 )
+texture = ExtResource( 2 )
+
+[node name="B_Disparox4" type="Button" parent="."]
+margin_left = 487.0
+margin_top = 668.0
+margin_right = 699.0
+margin_bottom = 874.0
+rect_scale = Vector2( 0.279999, 0.16 )
+icon = ExtResource( 3 )
+
+[node name="Nave" parent="." instance=ExtResource( 4 )]
+
+[node name="T_disparo" type="Timer" parent="."]
+autostart = true
+
+[node name="T_disparox4" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Orden_enemigos" type="AnimationPlayer" parent="."]
+editor/display_folded = true
+autoplay = "Enemigos"
+anims/Enemigos = SubResource( 1 )
+
+[node name="Enemigo" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -370.01, 266.924 )
+
+[node name="Enemigo2" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -305.46, 799.895 )
+
+[node name="Enemigo3" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( 164.046, 661.429 )
+
+[node name="Enemigo4" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -213.001, 662.597 )
+
+[node name="Enemigo5" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -193.853, 453.617 )
+
+[node name="Enemigo6" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -187.391, 195.146 )
+
+[node name="Enemigo7" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( -146.661, -122.395 )
+
+[node name="Enemigo8" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( 602.48, 791.616 )
+
+[node name="Enemigo9" parent="Orden_enemigos" instance=ExtResource( 5 )]
+position = Vector2( 738.265, 832.797 )
+
+[node name="B_Escudo" type="Button" parent="."]
+margin_left = 486.0
+margin_top = 331.0
+margin_right = 575.0
+margin_bottom = 417.0
+rect_rotation = 0.0347552
+rect_scale = Vector2( 0.822522, 0.810217 )
+flat = true
+[connection signal="pressed" from="B_Disparox4" to="." method="_on_B_Disparox4_pressed"]
+[connection signal="timeout" from="T_disparo" to="." method="_on_T_disparo_timeout"]
+[connection signal="timeout" from="T_disparox4" to="." method="_on_T_disparox4_timeout"]
+[connection signal="pressed" from="B_Escudo" to="." method="_on_B_Escudo_pressed"]
