@@ -150,13 +150,13 @@ autoplay = "Enemigos"
 anims/Enemigos = SubResource( 1 )
 
 [node name="Enemigo" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( -370.01, 266.924 )
+position = Vector2( 1142.71, 414.601 )
 
 [node name="Enemigo2" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( -305.46, 799.895 )
+position = Vector2( 1142.92, 81.6905 )
 
 [node name="Enemigo3" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( 164.046, 661.429 )
+position = Vector2( 1168.17, 646.125 )
 
 [node name="Enemigo4" parent="Orden_enemigos" instance=ExtResource( 5 )]
 position = Vector2( -213.001, 662.597 )
@@ -168,13 +168,13 @@ position = Vector2( -193.853, 453.617 )
 position = Vector2( -187.391, 195.146 )
 
 [node name="Enemigo7" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( -146.661, -122.395 )
+position = Vector2( 231.741, 790.399 )
 
 [node name="Enemigo8" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( 602.48, 791.616 )
+position = Vector2( 550.15, 790.603 )
 
 [node name="Enemigo9" parent="Orden_enemigos" instance=ExtResource( 5 )]
-position = Vector2( 738.265, 832.797 )
+position = Vector2( 385.735, -33.0939 )
 
 [node name="B_Escudo" type="Button" parent="."]
 margin_left = 486.0

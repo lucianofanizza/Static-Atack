@@ -17,3 +17,5 @@ func set_vector(vector):
 func _on_Visibilidad_screen_exited():
 	queue_free()
 	pass 
+
+

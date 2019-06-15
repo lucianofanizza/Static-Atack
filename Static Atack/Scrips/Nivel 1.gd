@@ -5,6 +5,21 @@ var Escudo = preload("res://Escenas/Disparo y escudo/Escudo.tscn")
 var Disparox4 = preload("res://Escenas/Disparo y escudo/Disparox4.tscn")
 var vida = true
 
+func _physics_process(delta):
+	if $Nave/HUD/Barra_mana.value == 0:
+		$B_Escudo.visible = false
+	if $Nave/HUD/Barra_mana.value > 0:
+		$B_Escudo.visible = true
+	if $Nave/HUD/Barra_vida.value == 0:
+		vida = false
+		$Nave/Sprite.visible = false
+		$Nave/Sprite2.visible = true
+		yield(get_tree().create_timer(0.1),"timeout")
+		$Nave/Sprite2.visible = false
+		$B_Escudo.visible = false
+		yield(get_tree().create_timer(0.5),"timeout")
+		get_tree().change_scene("res://Escenas/Menu principal/Pantalla_game_over.tscn")
+
 func _ready():
 	$B_Disparox4.disabled = true
 	pass

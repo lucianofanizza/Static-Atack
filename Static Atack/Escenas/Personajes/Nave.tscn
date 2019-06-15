@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scrips/Nave.gd" type="Script" id=1]
 [ext_resource path="res://Assests/Imagenes/Personajes/nave final.png" type="Texture" id=2]
+[ext_resource path="res://Assests/Imagenes/Explocion/explocion2.png" type="Texture" id=3]
+[ext_resource path="res://Assests/Imagenes/HUD/boton izquierdo.png" type="Texture" id=4]
+[ext_resource path="res://Assests/Imagenes/HUD/boton derecho.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 27.1194
@@ -13,12 +16,24 @@ bg_color = Color( 0.027451, 0.282353, 0.890196, 1 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 1, 0, 0, 1 )
 
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.219608, 0.27451, 0.321569, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 1 )
+
 [node name="Nave" type="Area2D"]
 position = Vector2( 523, 366 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5.83173 )
+scale = Vector2( 1, 1.16904 )
+texture = ExtResource( 3 )
 
 [node name="Colision" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -32,9 +47,44 @@ custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
 value = 100.0
 
+[node name="Barra_mana" type="ProgressBar" parent="HUD"]
+margin_left = 1.3327
+margin_top = 39.9886
+margin_right = 278.333
+margin_bottom = 53.9886
+custom_styles/fg = SubResource( 4 )
+custom_styles/bg = SubResource( 5 )
+value = 100.0
+
+[node name="B_iz" type="Button" parent="HUD"]
+margin_left = 27.2075
+margin_top = 635.295
+margin_right = 557.208
+margin_bottom = 995.295
+rect_scale = Vector2( 0.1, 0.14 )
+action_mode = 0
+icon = ExtResource( 4 )
+
+[node name="B_de" type="Button" parent="HUD"]
+margin_left = 100.538
+margin_top = 658.625
+margin_right = 630.538
+margin_bottom = 1018.63
+rect_scale = Vector2( 0.104031, 0.123109 )
+action_mode = 0
+icon = ExtResource( 5 )
+
 [node name="Pos_bala" type="Position2D" parent="."]
 position = Vector2( 0.455444, -43.4263 )
 
 [node name="Pos_bala2" type="Position2D" parent="."]
 position = Vector2( 0.455, -473.134 )
+
+[node name="Reg_mana" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 [connection signal="area_entered" from="." to="." method="_on_Nave_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Nave_body_entered"]
+[connection signal="pressed" from="HUD/B_iz" to="." method="_on_B_iz_pressed"]
+[connection signal="pressed" from="HUD/B_de" to="." method="_on_B_de_pressed"]
+[connection signal="timeout" from="Reg_mana" to="." method="_on_Reg_mana_timeout"]
